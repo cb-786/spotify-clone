@@ -1,0 +1,464 @@
+* {
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+   color: #fff;
+
+  
+}
+
+.main {
+ 
+  display:flex;
+  height: 100vh;
+ padding: 0.5rem;
+}
+
+
+.content {
+
+  background-color: #121212;
+    flex : 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-left: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music_pr {
+background-color: black;
+position : fixed;
+bottom: 0px;
+width: 100%;
+height: 72px;
+}
+
+.side_navbar {
+  background-color: black;
+width: 300px;
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+  background-color: #121212;
+  border-radius: 1rem;
+  overflow: auto;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.navcard {
+  line-height: 2.5rem;
+  border-color: white;
+  background-color: #121212;
+  opacity : 0.75;
+  padding : 0.5rem 0.75rem; 
+
+}
+
+.navcard:hover {
+  opacity : 1;
+}
+
+.navcard i {
+  line-height: 1.25rem;
+}
+
+.navcard a {
+  background-color: #121212;
+  line-height: 1rem;
+  margin-left: 1.5rem;
+}
+
+.library {
+  overflow: auto;
+  margin-top: 0.5rem;
+  background-color: #121212;
+  height:100vh;
+  border-radius: 1rem;
+  
+}
+
+#libhead {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5rem;
+  background-color: #121212;
+  padding: 1rem;
+}
+
+#libhead i {
+  opacity :0.7;
+  background-color: #121212;
+  line-height: 1.5rem;
+}
+#libhead i:hover {
+  opacity: 1;
+}
+#img1 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.libbox {
+  overflow: auto;
+}
+
+.box {
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 1rem 1.25rem;
+
+}
+
+.box .p1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.box .p2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  color: black;
+  height: 2rem;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px; 
+  background-color: #fff;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #121212; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 2rem; 
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff; 
+}
+
+.stickynav {
+  display: flex;
+  justify-content: space-between;
+ padding: 0.25rem;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  
+}
+
+#b2 {
+ color: white;
+}
+.badge1 {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  
+  font-weight: 700;
+  color: black;
+  height: 2rem;
+  margin-top: 0.5rem;
+  width: fit-content;
+  opacity: 0.7;
+}
+
+.badge1:hover {
+  opacity: 1;
+}
+
+.arr {
+  height: 1.5rem;
+  width: 1.5rem;
+  opacity: 0.7;
+  padding: 0.5rem;
+}
+
+.arr:hover {
+  opacity: 1;
+}
+
+#arrows {
+  margin-left: 1.5rem;
+}
+
+@media (max-width:1000px) {
+  #hide {
+    display:none;
+  }
+}
+
+.card {
+  width: 150px;
+  border-radius: 0.5rem;
+  background-color: #232323;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.cardcontain {
+  display:flex;
+  background-color: #121212;
+  flex-wrap: wrap;
+ 
+}
+
+.cardimg {
+  border-radius: 0.5rem;
+  height: 150px;
+  width: 150px;
+  width: 100%;
+ 
+  background-color: #232323;
+}
+.title-info {
+  margin-top: 0.5rem;
+  padding: 0,5rem;
+  font-weight: 700;
+  background-color: #232323;
+}
+
+.info {
+  padding: 0.5rem;
+  background-color: #232323;
+
+}
+
+#head {
+  background-color: #121212;
+   padding-top: 1rem;
+}
+
+.footer {
+  background-color: #121212;
+  height : 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  background-color: #121212;
+  width: 90%;
+  height: 30%;
+  border-top : 1px solid white;
+  opacity: 0.5;
+}
+
+.music_pr {
+  
+  display: flex;
+  z-index: 1;
+
+}
+.album {
+  width: 25%;
+  background-color: pink;
+}
+
+.media {
+  align-items: center;
+  width: 50%;
+  padding: 0;
+  position: relative;
+  left: 6rem;
+  z-index: 1;
+}
+
+.sound {
+  width: 25%;
+  background-color: black;
+
+ 
+
+}
+.micon {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+.micon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.progr {
+  margin-left: 2rem;
+  
+}
+
+.mediactrl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+  height: 2rem;
+  width: 2rem;
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+#play:hover {
+  height: 2.25rem;
+  width: 2.25rem;
+
+}
+
+.progr {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+ 
+  
+}
+
+.playback {
+  margin-top: 0.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 70%;
+  
+}
+
+.playback::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #1db950;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  z-index: 100;
+  
+}
+
+.playback::-webkit-slider-runnable-track {
+  
+  background-color: #ddd;
+  height: 0.85rem;
+  border-radius: 100px;
+  z-index: 10;
+
+} 
+
+.album {
+  display: flex;
+  
+}
+
+
+.albumpic {
+  padding: 0.5rem;
+  height: 5rem;
+  width: 4rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  
+}
+
+.albic {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.albic:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.albctrl {
+  position: relative;
+  right: 2rem;
+}
+
+.ic {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 0.65rem;
+  opacity: 0.7;
+}
+
+.ic:hover
+ {
+  opacity:1;
+ }
+
+.playback1 {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  appearance: none;
+  cursor: pointer;
+}
+
+.playback1::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #1db950;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  z-index: 100;
+  margin-top: -6px;
+  
+}
+
+.playback1::-webkit-slider-runnable-track {
+  
+  background-color: #ddd;
+  height: 0.25rem;
+  border-radius: 100px;
+  
+
+}
+
+
+
+
